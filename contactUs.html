@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Packers And Movers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="aboutStyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/c1bb3a3cd2.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+
+
+
+    <div class="div_nav_section">
+        <div class="nav_container">
+
+            <div class="div-logo">
+                <img src="/images/639bedb6-be1d-4b3d-9cb5-5c72f6033be0.jpeg" alt="">
+                <h3>BEST PACKERS MOVERS</h3>
+            </div>
+            <div class="div-navOptions">
+                <input type="checkbox" id="checking">
+                <label for="checking"><i class="fa-solid fa-bars"></i></label>
+                <ul>
+
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="gallery.html">Gallery</a></li>
+                 <li><a href="aboutUs.html">About Us</a></li>
+                 <li><a href="contactUs.html">Contact Us</a></li>
+  
+                </ul>
+                
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- nav ends here  -->
+
+
+
+    <div class="banner-section">
+        <div class="banner-container">
+            <img src="images/packers-movers-website-home-Photoroom.png-Photoroom.png" alt="">
+        </div>
+    </div>
+
+
+    <!-- banner ends here -->
+
+
+
+    <div class="form_section">
+        <h1>Get in touch with us</h1>
+        <div class="form_container">
+            
+                <form id="submit-form">
+                    <div class="name_div elem">
+                    <label class="lbl" for="">Username :</label>
+                    <input type="text" name="name" placeholder="name here...">
+                </div>
+
+                    <div class="email_div elem">
+                    <label class="lbl" for="">Email :</label>
+                    <input type="email" name="email" placeholder="email here...">
+                </div>
+
+                    <div class="message_div elem">
+                    <label class="lbl" for="">Subject :</label>
+                    <textarea style="height: 70px;" name="message" id="subject" placeholder="text here..."></textarea>
+                </div>
+                <input class="btn" type="submit" value="submit">
+                </form>
+           
+
+        </div>
+    </div>
+
+
+
+
+    <div class="footer-section">
+        <div class="footer_container">
+
+            <div class="about-company">
+                <h3>About Company</h3>
+                <p>"At <span style="font-weight: 500;">Best packers movers</span>, we pride ourselves on delivering unparalleled excellence in packing services tailored to meet the unique needs of our clients. With a <a style="text-decoration: none;color: #fff;font-weight: 600;" href="aboutUs.html">read more...</a></p>
+            </div>
+            <div class="keep_connected">
+                <h3>Keep Connected</h3>
+
+                <a href="https://www.facebook.com/best.packers.movers.2024?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/invites/contact/?i=gsltl94li8ut&utm_content=u2j44sy"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/+919656268718?text=Hi%20i'm%20searching%20a%20perfect%20packers%20movers,%20for%20shifting%20my%20items!"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <div class="contact_info">
+                <h3>Contact Information</h3>
+                <div class="contact-options">
+                    <div class="lo">
+                        <i style="padding: 5px; font-size: 18px;" class="fa-solid fa-location-dot"></i>
+                        <p>Kallai, kozhikode, kerala-673003</p>
+                    </div>
+                    <div class="lo">
+                        <i style="padding: 5px; font-size: 18px;" class="fa-regular fa-envelope"></i>
+                        <p>bestpackermovers3@gmail.com</p>
+
+                    </div>
+                    <div class="lo">
+                        <i style="padding: 5px; font-size: 18px;" class="fa-solid fa-phone"></i>
+                        <p>+919656268718, +919072078141</p>
+
+                    </div>
+                        
+
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+        
+
+    <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbwXWqauLXpumB5n6d55Fg4s5xk5ulic6FNJpmdO-fzBV1TYnBsIN0tmb5S1AjXLs_nW-g/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
+    </body>
+</html>
